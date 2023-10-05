@@ -39,4 +39,6 @@ Assistant:
 conversation.prompt = claude_prompt
 
 def get_answer_from_query(query):
-    return conversation.predict(input=query)
+    result = conversation.predict(input=query)
+    print('Output from get_answer_from_query:', result)
+    return result
